@@ -4,4 +4,4 @@ env.py
 __pycache__
 *.csv
 *.xlsx
-zillow.csv
+covid_data.csv
