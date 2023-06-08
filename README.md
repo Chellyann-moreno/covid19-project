@@ -25,9 +25,8 @@ Data planning will be shown in this readme.
 4. Data exploration- During the data exploration we would visualize and answer our questions and hypotheses. We would be using statistical tests and plots, to help proving our hypotheses and understand the various risk level of patients who were tested for covid.
 5. Data modeling- We would be using the most important features(15-20) to check the accuracy and recall scores. By looking on how to predict patients risk level before being tested for covid, and be able to provide the care and next steps. 
 6. Data Delivery- We would be using a jupyter notebook, where we would be showing our visualizations, questions and findings.
-7. 
 # Instructions on How to Reproduce this Project:
 For an user to succesfully reproduce this project, they must succesfully download the dataset from [Kaggle.com](https://www.kaggle.com/datasets/meirnizri/covid19-dataset). User must have proper wrangle.py explore.py, model.py, and final notebook. All documents must be downloaded in the same repository/folder to be able to run it successfully. 
 Once all files are download, user may run the final_report notebook.
 
-# Key findings, recommendations and takeaways:
+# Executive Summary:
