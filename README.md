@@ -1,9 +1,12 @@
 # Project Description:
-Corona Virus 19 is an airborne-virus that affected the world during 2020-2021, especially countries with a vas low income population. Covid-19 virus mainly affected elder and people with chronic illneses such as diabetes, respiratory diseases, and cardiovascular issues. 
-We would be looking at pre-conditions and how it affectes patients that were tested for covid-19.
-This data set was provided from the government of Mexico, contains anonymous information of patients who were tested of covid during 2020 and 2021
+The Corona Virus 19, also known as COVID-19, is an airborne virus that significantly impacted the global population between 2020 and 2021. It particularly affected countries with a large low-income population. Elderly individuals and those with pre-existing chronic illnesses such as diabetes, respiratory diseases, and cardiovascular issues were especially susceptible to the virus.
+
+In this project, we aim to analyze the impact of pre-existing conditions on patients who tested positive for COVID-19. The dataset used for this analysis was obtained from the government of Mexico and contains anonymized information of individuals who underwent COVID-19 testing during the period spanning 2020 to 2021.
+
 # Project Goals
-The main goal of this project is to build a machine learning model that, given a Covid-19 patient's current symptom, status, and medical history, will predict whether the patient is in high-risk, medium-risk or low-risk.
+The primary objective of this project is to develop a robust machine learning model capable of accurately classifying the risk level (high, medium, or low) for Covid-19 patients based on their current symptoms, medical status, and comprehensive medical history. By leveraging advanced predictive modeling techniques, we aim to enhance risk assessment capabilities, aiding healthcare professionals in making informed decisions and providing personalized care for patients affected by Covid-19.
+
+The project goal is to develop a model that accurately predicts the risk level of COVID-19 patients, enabling hospitals and clinics to enhance their preparedness and assessment. This will ensure the availability of essential resources, including tools, equipment, and staff, to effectively manage future patients, irrespective of their test results or patient volume.
 
 # Initial Hypotheses and Questions about the Data:
 1. Does being a smoker have a correlation with covid positive tests?
@@ -28,8 +31,25 @@ Data planning will be shown in this readme.
 4. Data exploration- During the data exploration we would visualize and answer our questions and hypotheses. We would be using statistical tests and plots, to help proving our hypotheses and understand the various risk level of patients who were tested for covid.
 5. Data modeling- We would be using the most important features(15-20) to check the accuracy and recall scores. By looking on how to predict patients risk level before being tested for covid, and be able to provide the care and next steps. 
 6. Data Delivery- We would be using a jupyter notebook, where we would be showing our visualizations, questions and findings.
+
 # Instructions on How to Reproduce this Project:
 For an user to succesfully reproduce this project, they must succesfully download the dataset from [Kaggle.com](https://www.kaggle.com/datasets/meirnizri/covid19-dataset). User must have proper wrangle.py explore.py, model.py, and final notebook. All documents must be downloaded in the same repository/folder to be able to run it successfully. 
 Once all files are download, user may run the final_report notebook.
 
 # Executive Summary:
+1. The analysis reveals a higher mortality rate among COVID-19 positive patients, but a significant number of individuals have survived.
+2. Positive COVID-19 cases show a significant correlation with underlying health conditions, as indicated by the Chi-Square test.
+3. Hospitalization is negatively correlated with positive COVID-19 cases, although a substantial number of positive cases still require hospitalization.
+4. Non-tobacco users have a higher proportion of positive COVID-19 cases compared to tobacco users, supported by the Chi-Square test.
+5. Heart problems may not have a strong correlation with positive COVID-19 cases, as individuals without heart problems have a higher rate of positive cases.
+6. Adults between the ages of 30 and 60+ are more likely to test positive for COVID-19, with a higher exposure risk for individuals in their 30s to 50s, potentially due to work and increased societal engagement.
+7. In this second iteration, we explore the integration of clustering techniques into our modeling process to uncover patterns and distinct groups within the data, enhancing accuracy and interpretability.
+8. Our models outperform the baseline accuracy of 48%, with the random forest model with a maximum depth of 2 and 10 estimators achieving the highest accuracy of 74.2%.
+9. The implementation of this model enables confident prediction of individuals with a medium level of risk before or after COVID-19 testing, contributing to effective risk assessment and management strategies.
+10. The test data achieved an accuracy of 74.2%, matching the accuracy of the validation data and surpassing the baseline by 26.2%.
+ 
+ # Recommendations and Takeaways:
+ 1. Our recommendation is to utilize the current model to predict the risk level of patients presenting symptoms and with pre-existing medical conditions, considering the specific features used in this model.
+2. Accurately predicting the risk level of patients enables better preparation and assessment of hospitals and clinics, ensuring the provision of necessary tools, equipment, and staff for future COVID-19 patients, regardless of their test results.
+3. Since this dataset represents a specific demographic from Mexico, we aim to gather data from other countries to develop a more universal model applicable to hospitals and clinics worldwide.
+4. Given more time, further research would involve acquiring more recent data, adopting different data preparation and cleaning approaches, and obtaining additional patient information such as socio-economic status and race to enhance the model's comprehensiveness. 
