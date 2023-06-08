@@ -15,6 +15,9 @@ The main goal of this project is to build a machine learning model that, given a
 7. Does hypertension have a correlation with covid risk?
 
 # Data dictionary:
+![Alt text](https://github.com/Chellyann-moreno/covid19-project/blob/main/Data%20Dictionary.png)
+
+
 For more information please visit: https://www.kaggle.com/datasets/meirnizri/covid19-dataset
 
 # Project Planning, Layout of Science Pipeline:
