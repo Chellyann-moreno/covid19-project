@@ -39,8 +39,7 @@ def covid_data():
     # Step 6: Map values for specific columns
     df['covid_pos'] = df['covid_pos'].map({2: 1, 3: 1, 4: 0, 5: 0, 6: 0, 7: 0})
     df['gender'] = df['gender'].map({1: 1, 2: 0})
-    df['is_dead'] = df['is_dead'].map({9999-99-99: 0})
-    df['is_dead'] = df['is_dead'].fillna(1)
+    df.is_dead=np.where(df['is_dead'] == '9999-99-99', 0, 1)
     df['is_hospitalized'] = df['is_hospitalized'].map({1: 1, 2: 0})
     df['ventilator'] = df['ventilator'].map({1: 1, 2: 0})
     df['pneumonia'] = df['pneumonia'].map({1: 1, 2: 0})
@@ -58,6 +57,30 @@ def covid_data():
 
     # Step 7: Create 'age_risk' column based on age values
     df['age_risk'] = np.where(df['age'] >= 60, 'high', 'low')
+
+    # Step 8:Define the risk categories (low, medium, high) using sum of related illness
+    #  Define the column names of the risk-related columns
+    risk_columns = ['is_hospitalized', 'ventilator',
+       'pneumonia', 'pregnant', 'diabetes', 'copd', 'asthma',
+       'immunosup', 'hypertension', 'heart_problems', 'obese', 'renal_disease',
+       'smoker', 'covid_pos', 'icu', 'age_risk']
+
+# Calculate the sum of risk-related columns
+    df['risk_sum'] = df[risk_columns].sum(axis=1)
+
+# Define the conditions for categorizing the risks
+    conditions = [
+    (df['risk_sum'] <= 1),      # Low risk
+    (df['risk_sum'] <= 3),      # Medium risk
+    (df['risk_sum'] > 3)        # High risk
+]
+
+# Define the risk categories
+    risk_categories = ['Low', 'Medium', 'High']
+
+# Create the new 'risk_category' column based on the conditions and categories and fill dataframe nulls with 0
+    df['risk_category'] = np.select(conditions, risk_categories, default='Unknown')
+    df=df.fillna(0)
 
     return df
 
