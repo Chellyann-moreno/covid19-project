@@ -38,7 +38,7 @@ Once all files are download, user may run the final_report notebook.
 Instructions: 
 1. Access the COVID-19 Project repository on GitHub.
 2. Click on the "Code" button and select "Download ZIP" to download the entire repository to your computer.Extract the downloaded    ZIP file to a directory of your choice. Or you may copy the SSH code onto your terminal. 
-3. Go to t[Kaggle.com](https://www.kaggle.com/datasets/meirnizri/covid19-dataset) and download the COVID-19 dataset in CSV format.
+3. Go to [Kaggle.com](https://www.kaggle.com/datasets/meirnizri/covid19-dataset) and download the COVID-19 dataset in CSV format.
 4. Save the downloaded CSV file as "covid_data.csv" in the same repository.
 5. Open the extracted repository directory and locate the "final_report.ipynb" notebook.
 6. Launch Jupyter Notebook or JupyterLab on your computer.
