@@ -35,6 +35,18 @@ Data planning will be shown in this readme.
 # Instructions on How to Reproduce this Project:
 For an user to succesfully reproduce this project, they must succesfully download the dataset from [Kaggle.com](https://www.kaggle.com/datasets/meirnizri/covid19-dataset). User must have proper wrangle.py explore.py, model.py, and final notebook. All documents must be downloaded in the same repository/folder to be able to run it successfully. 
 Once all files are download, user may run the final_report notebook.
+Instructions: 
+1. Access the COVID-19 Project repository on GitHub.
+2. Click on the "Code" button and select "Download ZIP" to download the entire repository to your computer.Extract the downloaded    ZIP file to a directory of your choice. Or you may copy the SSH code onto your terminal. 
+3. Go to t[Kaggle.com](https://www.kaggle.com/datasets/meirnizri/covid19-dataset) and download the COVID-19 dataset in CSV format.
+4. Save the downloaded CSV file as "covid_data.csv" in the same repository.
+5. Open the extracted repository directory and locate the "final_report.ipynb" notebook.
+6. Launch Jupyter Notebook or JupyterLab on your computer.
+7. Navigate to the extracted repository directory within the Jupyter interface.
+8. Click on the "final_report.ipynb" notebook to open it.
+9. Execute the notebook cells to reproduce the analysis using the downloaded dataset.
+10. Modify the notebook as needed, such as adjusting parameters or adding additional visualizations.
+    Save the modified notebook for future reference or sharing.
 
 # Executive Summary:
 1. The analysis reveals a higher mortality rate among COVID-19 positive patients, but a significant number of individuals have survived.
